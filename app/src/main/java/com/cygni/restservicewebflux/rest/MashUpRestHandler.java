@@ -28,6 +28,6 @@ public class MashUpRestHandler {
 
   @GetMapping(value = RestPaths.GET_MASH_UP, produces = MessageTypes.MASH_UP_1_JSON)
   public Mono<MashUp> getMashUp(@PathVariable(value = "mbid") final String mbId) {
-    return mashUpService.createMashupMessage(mbId);
+    return mashUpService.createMashupMessage(mbId).map(mashUpOutputConverter::convert);
   }
 }
