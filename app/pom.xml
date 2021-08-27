@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>rest-service-webflux</artifactId>
+        <groupId>com.cygni</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>app</artifactId>
+    <packaging>jar</packaging>
+
+    <name>Rest Service :: Server :: Application</name>
+    <description>rest api application</description>
+
+    <dependencies>
+        <!-- Our own API module -->
+        <dependency>
+            <groupId>com.cygni</groupId>
+            <artifactId>contract-rest</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+</project>

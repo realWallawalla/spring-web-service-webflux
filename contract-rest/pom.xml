@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>rest-service-webflux</artifactId>
+        <groupId>com.cygni</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>contract-rest</artifactId>
+    <packaging>jar</packaging>
+
+    <name>Rest Service :: Contract - Rest</name>
+    <description>Contract code for rest</description>
+
+    <properties>
+        <jaxb-api.version>2.3.1</jaxb-api.version>
+        <jaxb-impl.version>3.0.0</jaxb-impl.version>
+        <jaxb2-maven-plugin.version>2.5.0</jaxb2-maven-plugin.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>${jaxb-api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-impl</artifactId>
+            <version>${jaxb-impl.version}</version>
+        </dependency>
+    </dependencies>
+
+    <!-- +=============================================== -->
+    <!-- | Section 4: Build -->
+    <!-- +=============================================== -->
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>jaxb2-maven-plugin</artifactId>
+                <version>${jaxb2-maven-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>xsd-to-java</id>
+                        <goals>
+                            <goal>xjc</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <sources>
+                        <source>src/main/schemas/xml</source>
+                    </sources>
+                </configuration>
+            </plugin>
+            <!--<plugin>
+              <groupId>org.jsonschema2pojo</groupId>
+              <artifactId>jsonschema2pojo-maven-plugin</artifactId>
+              <version>1.1.1</version>
+              <configuration>
+                <sourceDirectory>${basedir}/src/main/schemas/json</sourceDirectory>
+                <targetPackage>externalschemas</targetPackage>
+                <sourceType>json</sourceType>
+              </configuration>
+              <executions>
+                <execution>
+                  <goals>
+                    <goal>generate</goal>
+                  </goals>
+                </execution>
+              </executions>
+            </plugin>-->
+        </plugins>
+    </build>
+</project>

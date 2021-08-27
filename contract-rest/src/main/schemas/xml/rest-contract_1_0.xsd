@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:mu="http://www.cygni.com/mashup/1_0"
+  targetNamespace="http://www.cygni.com/mashup/1_0"
+  elementFormDefault="qualified"
+  version="1.0.0">
+
+  <xs:complexType name="MashUp">
+    <xs:sequence>
+      <xs:element name="mbId" type="xs:string" />
+      <xs:element name="description" type="xs:string" />
+      <xs:element name="albums" type="mu:Album" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Album">
+    <xs:sequence>
+      <xs:element name="title" type="xs:string" />
+      <xs:element name="id" type="xs:string" />
+      <xs:element name="imageUrl" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
