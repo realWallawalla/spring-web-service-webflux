@@ -1,6 +1,6 @@
 package com.cygni.restservicewebflux.domain.client;
 
-import com.cygni.restservicewebflux.externalmodel.musicbrainz.MusicBrainzResponse;
+import com.cygni.restservicewebflux.externalmodel.musicbrainz.MusicBrainzResponseDto;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
@@ -14,11 +14,11 @@ public class MusicBrainzClient {
     this.webClient = webClientBuilder.baseUrl(BASE_URL).build();
   }
 
-  public Mono<MusicBrainzResponse> sendRequest(String mbId) {
+  public Mono<MusicBrainzResponseDto> sendRequest(String mbId) {
     return webClient
         .get()
         .uri("/{mbid}?inc=url-rels+release-groups&fmt=json", mbId)
         .retrieve()
-        .bodyToMono(MusicBrainzResponse.class);
+        .bodyToMono(MusicBrainzResponseDto.class);
   }
 }
