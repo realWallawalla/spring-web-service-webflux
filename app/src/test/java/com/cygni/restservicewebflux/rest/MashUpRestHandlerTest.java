@@ -45,8 +45,8 @@ class MashUpRestHandlerTest {
 
   @Disabled
   void getMashUp_should_return_mashupMessage_according_to_contract() {
-    MashUpDto mashUp1 = new MashUpDto(mbId, "desc", new ArrayList<>());
-    BDDMockito.given(mashUpService.createMashupMessage(mbId)).willReturn(Mono.just(mashUp1));
+    //MashUpDto mashUp1 = new MashUpDto(mbId, "desc", new ArrayList<>());
+    //BDDMockito.given(mashUpService.createMashupMessage(mbId)).willReturn(Mono.just(mashUp1));
     webTestClient = WebTestClient.bindToController(mashUpRestHandler).build();
 
     webTestClient

@@ -6,7 +6,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
 @Component
-public class MusicBrainzClient {
+public class MusicBrainzClient implements Client<MusicBrainzResponseDto, String> {
   public static final String BASE_URL = "http://musicbrainz.org/ws/2/artist";
   private final WebClient webClient;
 

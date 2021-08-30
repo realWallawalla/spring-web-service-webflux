@@ -9,10 +9,11 @@ import org.springframework.stereotype.Component;
 public class MashUpOutputConverter implements Converter<MashUp, MashUpDto> {
   @Override
   public MashUp convert(MashUpDto mashUpDto) {
-    MashUp mashUp = new MashUp();
+/*    MashUp mashUp = new MashUp();
     mashUp.setMbId(mashUpDto.mbId());
     mashUp.setDescription(mashUpDto.description());
     mashUp.getAlbums().addAll(mashUpDto.albums());
-    return mashUp;
+    return mashUp;*/
+    return null;
   }
 }
