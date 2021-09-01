@@ -25,6 +25,7 @@
 	<properties>
 		<java.version>16</java.version>
 		<commons-lang3.version>3.12.0</commons-lang3.version>
+		<log4j2.version>2.14.1</log4j2.version>
 	</properties>
 
 	<dependencies>
@@ -47,6 +48,11 @@
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
 			<version>${commons-lang3.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>${log4j2.version}</version>
 		</dependency>
 
 		<!-- Test -->
