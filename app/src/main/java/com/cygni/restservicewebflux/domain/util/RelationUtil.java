@@ -1,12 +1,10 @@
 package com.cygni.restservicewebflux.domain.util;
 
-import com.cygni.restservicewebflux.externalmodel.musicbrainz.MusicBrainzResponseDto;
 import com.cygni.restservicewebflux.externalmodel.musicbrainz.RelationDto;
 import com.cygni.restservicewebflux.externalmodel.musicbrainz.UrlDto;
-import org.apache.commons.lang3.StringUtils;
-
 import java.util.List;
 import java.util.Optional;
+import org.apache.commons.lang3.StringUtils;
 
 public class RelationUtil {
   public static Optional<String> lookForTitle(List<RelationDto> relations, WikiType wikiType) {
