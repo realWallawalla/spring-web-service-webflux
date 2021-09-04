@@ -4,6 +4,10 @@ import com.cygni.mashup._1_0.MashUp;
 import com.cygni.restservicewebflux.domain.converter.output.MashUpOutputConverter;
 import com.cygni.restservicewebflux.domain.service.MashUpService;
 import com.cygni.restservicewebflux.domain.service.ThrottlingService;
+import com.cygni.restservicewebflux.externalmodel.coverartarchive.CoverArtArchiveResponseDto;
+import com.cygni.restservicewebflux.externalmodel.musicbrainz.MusicBrainzResponseDto;
+import com.cygni.restservicewebflux.externalmodel.wikidata.WikiDataResponseDto;
+import com.cygni.restservicewebflux.externalmodel.wikipedia.WikipediaResponseDto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -31,7 +35,7 @@ public class MashUpRestHandler {
     this.mashUpOutputConverter = mashUpOutputConverter;
   }
 
-  @GetMapping(value = RestPaths.GET_MASH_UP, produces = MediaType.APPLICATION_JSON_VALUE)
+  @GetMapping(value = "/mashup/{mbid}", produces = MediaType.APPLICATION_JSON_VALUE)
   public Mono<ResponseEntity<MashUp>> getMashUp(@PathVariable(value = "mbid") final String mbId) {
     log.info("fetching mashup");
     return mashUpService

@@ -51,7 +51,7 @@ public class MashUpService {
             })
         .doOnError(
             throwable -> {
-              log.error("could not reach underlying api: MusicBrainz:", throwable.getCause());
+              log.error("Could not reach underlying apis: {}", throwable.getMessage());
               throw new RestClientException(throwable.getMessage());
             });
   }

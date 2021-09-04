@@ -22,7 +22,7 @@ public class CoverArtService {
     }
 
     private String extractCoverArtUrl(CoverArtArchiveResponseDto coverArtArchiveResponseDto) {
-        //its a list of images but take first
+        //its a list of images but with only 1 element
         return coverArtArchiveResponseDto
             .imageDtos()
             .stream()
