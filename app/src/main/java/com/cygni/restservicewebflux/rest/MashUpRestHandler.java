@@ -4,10 +4,6 @@ import com.cygni.mashup._1_0.MashUp;
 import com.cygni.restservicewebflux.domain.converter.output.MashUpOutputConverter;
 import com.cygni.restservicewebflux.domain.service.MashUpService;
 import com.cygni.restservicewebflux.domain.service.ThrottlingService;
-import com.cygni.restservicewebflux.externalmodel.coverartarchive.CoverArtArchiveResponseDto;
-import com.cygni.restservicewebflux.externalmodel.musicbrainz.MusicBrainzResponseDto;
-import com.cygni.restservicewebflux.externalmodel.wikidata.WikiDataResponseDto;
-import com.cygni.restservicewebflux.externalmodel.wikipedia.WikipediaResponseDto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -17,7 +13,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
-import v1.RestPaths;
 
 @RestController
 public class MashUpRestHandler {

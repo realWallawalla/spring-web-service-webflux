@@ -19,24 +19,23 @@ import reactor.core.publisher.Mono;
 
 @Component
 public class MashUpService {
-  private final MusicBrainzClient musicBrainzClient;
   private static final Logger log = LoggerFactory.getLogger(MashUpService.class);
 
+  private final MusicBrainzService musicBrainzService;
   private final WikiService wikiService;
   private final CoverArtService coverArtService;
 
   public MashUpService(
-      MusicBrainzClient musicBrainzClient,
+      MusicBrainzService musicBrainzService,
       WikiService wikiService,
       CoverArtService coverArtService) {
-    this.musicBrainzClient = musicBrainzClient;
+    this.musicBrainzService = musicBrainzService;
     this.wikiService = wikiService;
     this.coverArtService = coverArtService;
   }
 
   public Mono<MashUpDto> createMashupMessage(String mbId) {
-    return musicBrainzClient
-        .sendRequest(mbId)
+    return musicBrainzService.retrieveArtistInfo(mbId)
         .flatMap(
             musicBrainzResponse -> {
               Optional<String> title =
