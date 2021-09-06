@@ -1,6 +1,5 @@
 package com.cygni.restservicewebflux.domain.service;
 
-import com.cygni.restservicewebflux.domain.client.MusicBrainzClient;
 import com.cygni.restservicewebflux.domain.dto.AlbumDto;
 import com.cygni.restservicewebflux.domain.dto.MashUpDto;
 import com.cygni.restservicewebflux.domain.util.RelationUtil;
@@ -57,16 +56,14 @@ public class MashUpService {
 
   private Mono<String> retrieveArtistDescription(
       MusicBrainzResponseDto musicBrainzResponse, String title) {
-    if (title.isBlank()) {
-      return wikiService
-          .getTitle(
-              RelationUtil.lookForTitle(musicBrainzResponse.relations(), WikiType.WIKIDATA)
-                  .flatMap(RelationUtil::extractTitle)
-                  .orElseGet(() -> ""))
-          .flatMap(wikiService::getArtistDescription);
-    } else {
-      return wikiService.getArtistDescription(title);
-    }
+    return title.isBlank()
+        ? wikiService
+            .getTitle(
+                RelationUtil.lookForTitle(musicBrainzResponse.relations(), WikiType.WIKIDATA)
+                    .flatMap(RelationUtil::extractTitle)
+                    .orElseGet(() -> ""))
+            .flatMap(wikiService::getArtistDescription)
+        : wikiService.getArtistDescription(title);
   }
 
   private Mono<List<AlbumDto>> retrieveAlbums(List<ReleaseGroupDto> releaseGroups) {

@@ -1,8 +1,11 @@
 package com.cygni.restservicewebflux.domain.client;
 
+import com.cygni.restservicewebflux.domain.exception.ExternalApiException;
+import com.cygni.restservicewebflux.domain.util.ExternalApiType;
 import com.cygni.restservicewebflux.externalmodel.wikipedia.WikipediaResponseDto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -29,6 +32,9 @@ public class WikipediaClient implements Client<WikipediaResponseDto, String> {
                 UriEncoder.encode(title.replace(" ", "_")))
             .accept(MediaType.APPLICATION_JSON)
             .retrieve()
-            .bodyToMono(WikipediaResponseDto.class);
+            .onStatus(HttpStatus::isError, clientResponse ->
+                Mono.error(new ExternalApiException(clientResponse.statusCode(), ExternalApiType.WIKIPEDIA)))
+            .bodyToMono(WikipediaResponseDto.class)
+            .doOnError(throwable -> log.error("Could not fetch from {}, message: {}", ExternalApiType.WIKIPEDIA, throwable.getMessage()));
     }
 }

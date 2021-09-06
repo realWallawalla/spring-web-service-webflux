@@ -1,8 +1,11 @@
 package com.cygni.restservicewebflux.domain.client;
 
+import com.cygni.restservicewebflux.domain.exception.ExternalApiException;
+import com.cygni.restservicewebflux.domain.util.ExternalApiType;
 import com.cygni.restservicewebflux.externalmodel.wikidata.WikiDataResponseDto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -28,6 +31,9 @@ public class WikidataClient implements Client<WikiDataResponseDto, String> {
             wikiDataPageId)
         .accept(MediaType.APPLICATION_JSON)
         .retrieve()
-        .bodyToMono(WikiDataResponseDto.class);
+        .onStatus(HttpStatus::isError, clientResponse ->
+            Mono.error(new ExternalApiException(clientResponse.statusCode(), ExternalApiType.WIKIDATA)))
+        .bodyToMono(WikiDataResponseDto.class)
+        .doOnError(throwable -> log.error("Could not fetch from {}, message: {}", ExternalApiType.WIKIDATA, throwable.getMessage()));
   }
 }
