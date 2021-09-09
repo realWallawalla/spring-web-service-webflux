@@ -1,0 +1,1311 @@
+{
+  "ipis": [],
+  "life-span": {
+    "end": null,
+    "begin": "1996-09",
+    "ended": false
+  },
+  "gender": null,
+  "type": "Group",
+  "id": "cc197bad-dc9c-440d-a5b5-d52ba2e14234",
+  "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+  "relations": [
+    {
+      "attribute-ids": {},
+      "attributes": [],
+      "source-credit": "",
+      "type": "allmusic",
+      "attribute-values": {},
+      "type-id": "6b3e3c85-0002-4f34-aca6-80ace0d7e846",
+      "url": {
+        "id": "8d6d2056-a60a-48cd-bac8-cb65e1779898",
+        "resource": "https://www.allmusic.com/artist/mn0000775877"
+      },
+      "direction": "forward",
+      "target-credit": "",
+      "target-type": "url",
+      "ended": false,
+      "end": null,
+      "begin": null
+    },
+    {
+      "url": {
+        "resource": "https://www.bandsintown.com/a/99",
+        "id": "2069364e-4549-4ddb-96e8-75ae69936623"
+      },
+      "type-id": "ea45ed3d-2d5e-456e-8c32-94b6f51426e2",
+      "attribute-values": {},
+      "type": "bandsintown",
+      "target-credit": "",
+      "direction": "forward",
+      "attribute-ids": {},
+      "source-credit": "",
+      "attributes": [],
+      "begin": null,
+      "target-type": "url",
+      "end": null,
+      "ended": false
+    },
+    {
+      "type": "BBC Music page",
+      "attribute-values": {},
+      "url": {
+        "resource": "https://www.bbc.co.uk/music/artists/cc197bad-dc9c-440d-a5b5-d52ba2e14234",
+        "id": "2f430844-6fbf-4146-9910-520e4156f151"
+      },
+      "type-id": "d028a975-000c-4525-9333-d3c8425e4b54",
+      "target-credit": "",
+      "direction": "forward",
+      "attribute-ids": {},
+      "source-credit": "",
+      "attributes": [],
+      "begin": null,
+      "target-type": "url",
+      "ended": true,
+      "end": "2020-11-19"
+    },
+    {
+      "begin": null,
+      "ended": false,
+      "end": null,
+      "target-type": "url",
+      "direction": "forward",
+      "target-credit": "",
+      "type": "blog",
+      "attribute-values": {},
+      "url": {
+        "id": "e71ac1e0-0868-4659-ba96-1bdc17c178c6",
+        "resource": "http://coldplay.tumblr.com/"
+      },
+      "type-id": "eb535226-f8ca-499d-9b18-6a144df4ae6f",
+      "source-credit": "",
+      "attributes": [],
+      "attribute-ids": {}
+    },
+    {
+      "source-credit": "",
+      "attributes": [],
+      "attribute-ids": {},
+      "direction": "forward",
+      "target-credit": "",
+      "attribute-values": {},
+      "type": "discogs",
+      "url": {
+        "resource": "https://www.discogs.com/artist/29735",
+        "id": "6aa601d8-efe9-4f72-bf1c-8084a95cf523"
+      },
+      "type-id": "04a5b104-a4c2-4bac-99a1-7b837c37d9e4",
+      "ended": false,
+      "end": null,
+      "target-type": "url",
+      "begin": null
+    },
+    {
+      "begin": null,
+      "target-type": "url",
+      "ended": false,
+      "end": null,
+      "attribute-values": {},
+      "type": "fanpage",
+      "type-id": "f484f897-81cc-406e-96f9-cd799a04ee24",
+      "url": {
+        "id": "8020cf4d-8e04-4b5e-b868-f6678902d546",
+        "resource": "http://www.pleasureunit.com/coldplay/index.php"
+      },
+      "target-credit": "",
+      "direction": "forward",
+      "attribute-ids": {},
+      "attributes": [],
+      "source-credit": ""
+    },
+    {
+      "begin": null,
+      "ended": false,
+      "end": null,
+      "target-type": "url",
+      "target-credit": "",
+      "direction": "forward",
+      "attribute-values": {},
+      "type": "free streaming",
+      "type-id": "769085a1-c2f7-4c24-a532-2375a77693bd",
+      "url": {
+        "resource": "https://open.spotify.com/artist/4gzpq5DPGxSnKTe4SA8HAU",
+        "id": "32a0701e-b889-4db2-99d5-182c5dd0138c"
+      },
+      "attributes": [],
+      "source-credit": "",
+      "attribute-ids": {}
+    },
+    {
+      "ended": false,
+      "end": null,
+      "target-type": "url",
+      "begin": null,
+      "attributes": [],
+      "source-credit": "",
+      "attribute-ids": {},
+      "direction": "forward",
+      "target-credit": "",
+      "attribute-values": {},
+      "type": "free streaming",
+      "url": {
+        "resource": "https://www.deezer.com/artist/892",
+        "id": "b17247c6-1238-4e1c-97e5-333eaab4449c"
+      },
+      "type-id": "769085a1-c2f7-4c24-a532-2375a77693bd"
+    },
+    {
+      "direction": "forward",
+      "target-credit": "",
+      "url": {
+        "resource": "https://www.imdb.com/name/nm1095892/",
+        "id": "04f81d72-6623-4780-b4fd-f4d2f5ab64ff"
+      },
+      "type-id": "94c8b0cc-4477-4106-932c-da60e63de61c",
+      "attribute-values": {},
+      "type": "IMDb",
+      "source-credit": "",
+      "attributes": [],
+      "attribute-ids": {},
+      "begin": null,
+      "end": null,
+      "ended": false,
+      "target-type": "url"
+    },
+    {
+      "ended": false,
+      "end": null,
+      "target-type": "url",
+      "begin": null,
+      "source-credit": "",
+      "attributes": [],
+      "attribute-ids": {},
+      "direction": "forward",
+      "target-credit": "",
+      "type": "last.fm",
+      "attribute-values": {},
+      "type-id": "08db8098-c0df-4b78-82c3-c8697b4bba7f",
+      "url": {
+        "id": "a657b258-ff9d-413a-8921-8b8a7b4f77f6",
+        "resource": "https://www.last.fm/music/Coldplay"
+      }
+    },
+    {
+      "begin": null,
+      "end": null,
+      "ended": false,
+      "target-type": "url",
+      "target-credit": "",
+      "direction": "forward",
+      "type-id": "e4d73442-3762-45a8-905c-401da65544ed",
+      "url": {
+        "resource": "http://muzikum.eu/en/122-3547/coldplay/lyrics.html",
+        "id": "08669f21-ee40-4dc9-8c04-8fbf6d2e6c7b"
+      },
+      "attribute-values": {},
+      "type": "lyrics",
+      "attributes": [],
+      "source-credit": "",
+      "attribute-ids": {}
+    },
+    {
+      "target-credit": "",
+      "direction": "forward",
+      "url": {
+        "id": "0488c745-49b7-46c1-87eb-3dab86e6bcb6",
+        "resource": "https://genius.com/artists/Coldplay"
+      },
+      "type-id": "e4d73442-3762-45a8-905c-401da65544ed",
+      "attribute-values": {},
+      "type": "lyrics",
+      "attributes": [],
+      "source-credit": "",
+      "attribute-ids": {},
+      "begin": null,
+      "end": null,
+      "ended": false,
+      "target-type": "url"
+    },
+    {
+      "attributes": [],
+      "source-credit": "",
+      "attribute-ids": {},
+      "target-credit": "",
+      "direction": "forward",
+      "url": {
+        "id": "5ebe1aa0-6763-4360-a10d-a5bcf59d56af",
+        "resource": "https://www.musixmatch.com/artist/Coldplay"
+      },
+      "type-id": "e4d73442-3762-45a8-905c-401da65544ed",
+      "attribute-values": {},
+      "type": "lyrics",
+      "end": null,
+      "ended": false,
+      "target-type": "url",
+      "begin": null
+    },
+    {
+      "begin": null,
+      "target-type": "url",
+      "end": null,
+      "ended": false,
+      "type-id": "bac47923-ecde-4b59-822e-d08f0cd10156",
+      "url": {
+        "id": "e4fcef30-79b8-4796-9570-0d0227e0d9a4",
+        "resource": "https://myspace.com/coldplay"
+      },
+      "type": "myspace",
+      "attribute-values": {},
+      "direction": "forward",
+      "target-credit": "",
+      "attribute-ids": {},
+      "source-credit": "",
+      "attributes": []
+    },
+    {
+      "direction": "forward",
+      "target-credit": "",
+      "attribute-values": {},
+      "type": "official homepage",
+      "type-id": "fe33d22f-c3b0-4d68-bd53-a856badf2b15",
+      "url": {
+        "resource": "http://www.coldplay.com/",
+        "id": "d72daab6-b690-46fb-8f9c-071d3a562540"
+      },
+      "source-credit": "",
+      "attributes": [],
+      "attribute-ids": {},
+      "begin": null,
+      "ended": false,
+      "end": null,
+      "target-type": "url"
+    },
+    {
+      "ended": false,
+      "end": null,
+      "target-type": "url",
+      "begin": null,
+      "attributes": [],
+      "source-credit": "",
+      "attribute-ids": {},
+      "direction": "forward",
+      "target-credit": "",
+      "attribute-values": {},
+      "type": "online community",
+      "url": {
+        "resource": "http://coldplay.livejournal.com/",
+        "id": "d0750c3e-3398-4162-9393-b897126a1fa6"
+      },
+      "type-id": "35b3a50f-bf0e-4309-a3b4-58eeed8cee6a"
+    },
+    {
+      "attribute-values": {},
+      "type": "other databases",
+      "type-id": "d94fb61c-fa20-4e3c-a19a-71a949fb2c55",
+      "url": {
+        "resource": "http://id.loc.gov/authorities/names/no99089189",
+        "id": "737a9e28-47ca-4fdd-883f-e63e26bf6a07"
+      },
+      "direction": "forward",
+      "target-credit": "",
+      "attribute-ids": {},
+      "attributes": [],
+      "source-credit": "",
+      "begin": null,
+      "target-type": "url",
+      "ended": false,
+      "end": null
+    },
+    {
+      "target-type": "url",
+      "ended": false,
+      "end": null,
+      "begin": null,
+      "attribute-ids": {},
+      "source-credit": "",
+      "attributes": [],
+      "type": "other databases",
+      "attribute-values": {},
+      "url": {
+        "resource": "https://catalogue.bnf.fr/ark:/12148/cb140349761",
+        "id": "aa203581-dbf9-47c9-b05e-7d6f90445299"
+      },
+      "type-id": "d94fb61c-fa20-4e3c-a19a-71a949fb2c55",
+      "target-credit": "",
+      "direction": "forward"
+    },
+    {
+      "begin": null,
+      "target-type": "url",
+      "ended": false,
+      "end": null,
+      "type": "other databases",
+      "attribute-values": {},
+      "type-id": "d94fb61c-fa20-4e3c-a19a-71a949fb2c55",
+      "url": {
+        "resource": "https://d-nb.info/gnd/6501726-2",
+        "id": "8fd60ace-7815-4246-bd35-c290fb9854ae"
+      },
+      "direction": "forward",
+      "target-credit": "",
+      "attribute-ids": {},
+      "source-credit": "",
+      "attributes": []
+    },
+    {
+      "attribute-ids": {},
+      "source-credit": "",
+      "attributes": [],
+      "type-id": "d94fb61c-fa20-4e3c-a19a-71a949fb2c55",
+      "url": {
+        "resource": "https://imvdb.com/n/coldplay",
+        "id": "fea2d722-8aa0-4eb6-bb91-f081ef0d49ed"
+      },
+      "type": "other databases",
+      "attribute-values": {},
+      "direction": "forward",
+      "target-credit": "",
+      "target-type": "url",
+      "end": null,
+      "ended": false,
+      "begin": null
+    },
+    {
+      "end": null,
+      "ended": false,
+      "target-type": "url",
+      "begin": null,
+      "source-credit": "",
+      "attributes": [],
+      "attribute-ids": {},
+      "target-credit": "",
+      "direction": "forward",
+      "url": {
+        "id": "3c2f02d7-571a-4a6f-8ea6-75e40ddcefa6",
+        "resource": "https://musicmoz.org/Bands_and_Artists/C/Coldplay/"
+      },
+      "type-id": "d94fb61c-fa20-4e3c-a19a-71a949fb2c55",
+      "attribute-values": {},
+      "type": "other databases"
+    },
+    {
+      "begin": null,
+      "target-type": "url",
+      "end": null,
+      "ended": false,
+      "url": {
+        "resource": "https://openlibrary.org/authors/OL2741867A/",
+        "id": "f90432db-4bad-4d60-b7b8-7205514add8d"
+      },
+      "type-id": "d94fb61c-fa20-4e3c-a19a-71a949fb2c55",
+      "attribute-values": {},
+      "type": "other databases",
+      "direction": "forward",
+      "target-credit": "",
+      "attribute-ids": {},
+      "attributes": [],
+      "source-credit": ""
+    },
+    {
+      "begin": null,
+      "ended": false,
+      "end": null,
+      "target-type": "url",
+      "direction": "forward",
+      "target-credit": "",
+      "attribute-values": {},
+      "type": "other databases",
+      "type-id": "d94fb61c-fa20-4e3c-a19a-71a949fb2c55",
+      "url": {
+        "resource": "https://rateyourmusic.com/artist/coldplay",
+        "id": "18f231e9-c827-402a-9746-2b9d54b7447d"
+      },
+      "attributes": [],
+      "source-credit": "",
+      "attribute-ids": {}
+    },
+    {
+      "attribute-ids": {},
+      "attributes": [],
+      "source-credit": "",
+      "type": "other databases",
+      "attribute-values": {},
+      "type-id": "d94fb61c-fa20-4e3c-a19a-71a949fb2c55",
+      "url": {
+        "resource": "https://www.livefans.jp/artists/2236",
+        "id": "04572879-847b-4c7e-9ba9-ee108f4ca7e3"
+      },
+      "target-credit": "",
+      "direction": "forward",
+      "target-type": "url",
+      "ended": false,
+      "end": null,
+      "begin": null
+    },
+    {
+      "target-credit": "",
+      "direction": "forward",
+      "url": {
+        "resource": "https://www.musik-sammler.de/artist/3209/",
+        "id": "cada083e-cbbd-46b3-a7c5-33b08f99141c"
+      },
+      "type-id": "d94fb61c-fa20-4e3c-a19a-71a949fb2c55",
+      "type": "other databases",
+      "attribute-values": {},
+      "source-credit": "",
+      "attributes": [],
+      "attribute-ids": {},
+      "begin": null,
+      "end": null,
+      "ended": false,
+      "target-type": "url"
+    },
+    {
+      "target-type": "url",
+      "ended": false,
+      "end": null,
+      "begin": null,
+      "attribute-ids": {},
+      "source-credit": "",
+      "attributes": [],
+      "attribute-values": {},
+      "type": "other databases",
+      "url": {
+        "id": "68e3f53b-45b2-49b7-8504-1671d6ec9188",
+        "resource": "https://www.whosampled.com/Coldplay/"
+      },
+      "type-id": "d94fb61c-fa20-4e3c-a19a-71a949fb2c55",
+      "direction": "forward",
+      "target-credit": ""
+    },
+    {
+      "attributes": [],
+      "source-credit": "",
+      "attribute-ids": {},
+      "target-credit": "",
+      "direction": "forward",
+      "type": "other databases",
+      "attribute-values": {},
+      "type-id": "d94fb61c-fa20-4e3c-a19a-71a949fb2c55",
+      "url": {
+        "id": "3543c29a-728a-49e2-b25b-6e40d9fd8a60",
+        "resource": "https://www.worldcat.org/identities/lccn-no99089189/"
+      },
+      "ended": false,
+      "end": null,
+      "target-type": "url",
+      "begin": null
+    },
+    {
+      "source-credit": "",
+      "attributes": [],
+      "attribute-ids": {},
+      "direction": "forward",
+      "target-credit": "",
+      "type-id": "f8319a2f-f824-4617-81c8-be6560b3b203",
+      "url": {
+        "resource": "https://play.google.com/store/music/artist?id=Aroavh4k5ypej6qdhyoo52q7bpm",
+        "id": "d03387ef-5e37-42a9-869b-c03da7ea0919"
+      },
+      "type": "purchase for download",
+      "attribute-values": {},
+      "end": "2020-10-12",
+      "ended": true,
+      "target-type": "url",
+      "begin": null
+    },
+    {
+      "begin": null,
+      "target-type": "url",
+      "ended": false,
+      "end": null,
+      "type": "purchase for download",
+      "attribute-values": {},
+      "type-id": "f8319a2f-f824-4617-81c8-be6560b3b203",
+      "url": {
+        "id": "068a465d-4aab-4114-8c25-b1f51e078c37",
+        "resource": "https://itunes.apple.com/artist/id471744"
+      },
+      "target-credit": "",
+      "direction": "forward",
+      "attribute-ids": {},
+      "attributes": [],
+      "source-credit": ""
+    },
+    {
+      "target-type": "url",
+      "ended": false,
+      "end": null,
+      "begin": null,
+      "attribute-ids": {},
+      "source-credit": "",
+      "attributes": [],
+      "attribute-values": {},
+      "type": "purchase for download",
+      "url": {
+        "resource": "https://itunes.apple.com/cn/artist/id471744",
+        "id": "1b536360-7df1-43ae-bcbc-eb94bef0456e"
+      },
+      "type-id": "f8319a2f-f824-4617-81c8-be6560b3b203",
+      "target-credit": "",
+      "direction": "forward"
+    },
+    {
+      "begin": null,
+      "target-type": "url",
+      "ended": false,
+      "end": null,
+      "attribute-values": {},
+      "type": "purchase for download",
+      "type-id": "f8319a2f-f824-4617-81c8-be6560b3b203",
+      "url": {
+        "resource": "https://itunes.apple.com/de/artist/id471744",
+        "id": "6ec65124-d02c-4244-ac44-bbd6c2d83577"
+      },
+      "direction": "forward",
+      "target-credit": "",
+      "attribute-ids": {},
+      "attributes": [],
+      "source-credit": ""
+    },
+    {
+      "direction": "forward",
+      "target-credit": "",
+      "url": {
+        "id": "c0623afc-d14b-4df1-950b-7da91497271b",
+        "resource": "https://itunes.apple.com/jp/artist/id471744"
+      },
+      "type-id": "f8319a2f-f824-4617-81c8-be6560b3b203",
+      "type": "purchase for download",
+      "attribute-values": {},
+      "source-credit": "",
+      "attributes": [],
+      "attribute-ids": {},
+      "begin": null,
+      "end": null,
+      "ended": false,
+      "target-type": "url"
+    },
+    {
+      "end": null,
+      "ended": false,
+      "target-type": "url",
+      "begin": null,
+      "attributes": [],
+      "source-credit": "",
+      "attribute-ids": {},
+      "direction": "forward",
+      "target-credit": "",
+      "type-id": "f8319a2f-f824-4617-81c8-be6560b3b203",
+      "url": {
+        "resource": "https://uk.7digital.com/artist/coldplay",
+        "id": "178e465e-ce1e-4e49-90fa-35e1f36b65a8"
+      },
+      "attribute-values": {},
+      "type": "purchase for download"
+    },
+    {
+      "begin": null,
+      "target-type": "url",
+      "end": null,
+      "ended": false,
+      "type-id": "f8319a2f-f824-4617-81c8-be6560b3b203",
+      "url": {
+        "id": "8d15473a-3c81-4123-8dd0-a21c070fed5a",
+        "resource": "https://us.7digital.com/artist/coldplay"
+      },
+      "attribute-values": {},
+      "type": "purchase for download",
+      "target-credit": "",
+      "direction": "forward",
+      "attribute-ids": {},
+      "attributes": [],
+      "source-credit": ""
+    },
+    {
+      "type": "purchase for download",
+      "attribute-values": {},
+      "type-id": "f8319a2f-f824-4617-81c8-be6560b3b203",
+      "url": {
+        "resource": "https://www.beatport.com/artist/coldplay/162668",
+        "id": "6ad8916b-63f6-438d-9d47-28fe33ec0da9"
+      },
+      "direction": "forward",
+      "target-credit": "",
+      "attribute-ids": {},
+      "attributes": [],
+      "source-credit": "",
+      "begin": null,
+      "target-type": "url",
+      "ended": false,
+      "end": null
+    },
+    {
+      "begin": null,
+      "ended": false,
+      "end": null,
+      "target-type": "url",
+      "target-credit": "",
+      "direction": "forward",
+      "attribute-values": {},
+      "type": "purchase for download",
+      "type-id": "f8319a2f-f824-4617-81c8-be6560b3b203",
+      "url": {
+        "resource": "https://www.junodownload.com/artists/Coldplay/releases/",
+        "id": "c74aa403-1876-4dd5-9399-7981bb29c2d7"
+      },
+      "source-credit": "",
+      "attributes": [],
+      "attribute-ids": {}
+    },
+    {
+      "target-type": "url",
+      "ended": true,
+      "end": "2018-06-30",
+      "begin": null,
+      "attribute-ids": {},
+      "attributes": [],
+      "source-credit": "",
+      "attribute-values": {},
+      "type": "purevolume",
+      "url": {
+        "resource": "http://www.purevolume.com/coldplay",
+        "id": "54f08adf-afdd-4013-a11f-d564d54873de"
+      },
+      "type-id": "b6f02157-a9d3-4f24-9057-0675b2dbc581",
+      "target-credit": "",
+      "direction": "forward"
+    },
+    {
+      "direction": "forward",
+      "target-credit": "",
+      "type-id": "79c5b84d-a206-4f4c-9832-78c028c312c3",
+      "url": {
+        "id": "f4806d28-aedb-46fa-8572-618ed0bffa6d",
+        "resource": "https://secondhandsongs.com/artist/10590"
+      },
+      "attribute-values": {},
+      "type": "secondhandsongs",
+      "attributes": [],
+      "source-credit": "",
+      "attribute-ids": {},
+      "begin": null,
+      "end": null,
+      "ended": false,
+      "target-type": "url"
+    },
+    {
+      "ended": false,
+      "end": null,
+      "target-type": "url",
+      "begin": null,
+      "attributes": [],
+      "source-credit": "",
+      "attribute-ids": {},
+      "direction": "forward",
+      "target-credit": "",
+      "attribute-values": {},
+      "type": "setlistfm",
+      "type-id": "bf5d0d5e-27a1-4e94-9df7-3cdc67b3b207",
+      "url": {
+        "resource": "https://www.setlist.fm/setlists/coldplay-3d6bde3.html",
+        "id": "0b5dea3d-6d69-4e42-bdf5-511dcb281d7e"
+      }
+    },
+    {
+      "begin": null,
+      "ended": false,
+      "end": null,
+      "target-type": "url",
+      "target-credit": "",
+      "direction": "forward",
+      "attribute-values": {},
+      "type": "social network",
+      "type-id": "99429741-f3f6-484b-84f8-23af51991770",
+      "url": {
+        "id": "3a6a9c8d-1672-4330-8204-1b9435b3ef74",
+        "resource": "https://plus.google.com/+Coldplay"
+      },
+      "source-credit": "",
+      "attributes": [],
+      "attribute-ids": {}
+    },
+    {
+      "direction": "forward",
+      "target-credit": "",
+      "attribute-values": {},
+      "type": "social network",
+      "url": {
+        "id": "70a74e7b-1a30-4fab-9329-5db614b01a70",
+        "resource": "https://twitter.com/coldplay"
+      },
+      "type-id": "99429741-f3f6-484b-84f8-23af51991770",
+      "source-credit": "",
+      "attributes": [],
+      "attribute-ids": {},
+      "begin": null,
+      "ended": false,
+      "end": null,
+      "target-type": "url"
+    },
+    {
+      "begin": null,
+      "target-type": "url",
+      "end": null,
+      "ended": false,
+      "type-id": "99429741-f3f6-484b-84f8-23af51991770",
+      "url": {
+        "resource": "https://vk.com/coldplay",
+        "id": "c1c0358d-2f07-4012-92b0-faf6888add91"
+      },
+      "type": "social network",
+      "attribute-values": {},
+      "target-credit": "",
+      "direction": "forward",
+      "attribute-ids": {},
+      "source-credit": "",
+      "attributes": []
+    },
+    {
+      "begin": null,
+      "target-type": "url",
+      "end": null,
+      "ended": false,
+      "url": {
+        "id": "dc252a24-85bd-4005-8595-730056fb875a",
+        "resource": "https://www.facebook.com/coldplay"
+      },
+      "type-id": "99429741-f3f6-484b-84f8-23af51991770",
+      "type": "social network",
+      "attribute-values": {},
+      "target-credit": "",
+      "direction": "forward",
+      "attribute-ids": {},
+      "attributes": [],
+      "source-credit": ""
+    },
+    {
+      "source-credit": "",
+      "attributes": [],
+      "attribute-ids": {},
+      "direction": "forward",
+      "target-credit": "",
+      "url": {
+        "id": "5963637d-cde7-4c0e-9934-488d53378933",
+        "resource": "https://www.instagram.com/coldplay/"
+      },
+      "type-id": "99429741-f3f6-484b-84f8-23af51991770",
+      "attribute-values": {},
+      "type": "social network",
+      "end": null,
+      "ended": false,
+      "target-type": "url",
+      "begin": null
+    },
+    {
+      "begin": null,
+      "target-type": "url",
+      "end": null,
+      "ended": false,
+      "url": {
+        "resource": "https://www.songkick.com/artists/197928",
+        "id": "c7d54210-e2e0-4896-83cd-3088d24fec8f"
+      },
+      "type-id": "aac9c4bc-a5b9-30b8-9839-e3ac314c6e58",
+      "attribute-values": {},
+      "type": "songkick",
+      "direction": "forward",
+      "target-credit": "",
+      "attribute-ids": {},
+      "source-credit": "",
+      "attributes": []
+    },
+    {
+      "direction": "forward",
+      "target-credit": "",
+      "type": "soundcloud",
+      "attribute-values": {},
+      "url": {
+        "id": "cb4d1926-0254-49b6-83ca-2a124b90a56f",
+        "resource": "https://soundcloud.com/coldplay"
+      },
+      "type-id": "89e4a949-0976-440d-bda1-5f772c1e5710",
+      "attributes": [],
+      "source-credit": "",
+      "attribute-ids": {},
+      "begin": null,
+      "ended": false,
+      "end": null,
+      "target-type": "url"
+    },
+    {
+      "target-type": "url",
+      "end": null,
+      "ended": false,
+      "begin": null,
+      "attribute-ids": {},
+      "attributes": [],
+      "source-credit": "",
+      "type-id": "63cc5d1f-f096-4c94-a43f-ecb32ea94161",
+      "url": {
+        "id": "65ef78ed-95ef-4336-8b71-455a0723a90b",
+        "resource": "https://listen.tidal.com/artist/8812"
+      },
+      "type": "streaming",
+      "attribute-values": {},
+      "target-credit": "",
+      "direction": "forward"
+    },
+    {
+      "attribute-ids": {},
+      "attributes": [],
+      "source-credit": "",
+      "type-id": "63cc5d1f-f096-4c94-a43f-ecb32ea94161",
+      "url": {
+        "id": "6d210b62-922a-4a12-8f1e-3b95e98e32ca",
+        "resource": "https://music.amazon.com/artists/B000QKGN8W"
+      },
+      "attribute-values": {},
+      "type": "streaming",
+      "target-credit": "",
+      "direction": "forward",
+      "target-type": "url",
+      "end": null,
+      "ended": false,
+      "begin": null
+    },
+    {
+      "type-id": "63cc5d1f-f096-4c94-a43f-ecb32ea94161",
+      "url": {
+        "id": "f690e2d4-a769-4f59-8d04-927a55c6b199",
+        "resource": "https://us.napster.com/artist/coldplay"
+      },
+      "type": "streaming",
+      "attribute-values": {},
+      "target-credit": "",
+      "direction": "forward",
+      "attribute-ids": {},
+      "source-credit": "",
+      "attributes": [],
+      "begin": null,
+      "target-type": "url",
+      "end": null,
+      "ended": false
+    },
+    {
+      "attribute-ids": {},
+      "source-credit": "",
+      "attributes": [],
+      "type": "VIAF",
+      "attribute-values": {},
+      "url": {
+        "id": "1abb80fc-e6a7-4fff-befa-90e79af999e7",
+        "resource": "http://viaf.org/viaf/157712849"
+      },
+      "type-id": "e8571dcc-35d4-4e91-a577-a3382fd84460",
+      "direction": "forward",
+      "target-credit": "",
+      "target-type": "url",
+      "ended": false,
+      "end": null,
+      "begin": null
+    },
+    {
+      "target-type": "url",
+      "ended": false,
+      "end": null,
+      "begin": null,
+      "attribute-ids": {},
+      "source-credit": "",
+      "attributes": [],
+      "type": "wikidata",
+      "attribute-values": {},
+      "url": {
+        "resource": "https://www.wikidata.org/wiki/Q45188",
+        "id": "6ec75d13-b73d-46f7-acb7-8f0df73201f2"
+      },
+      "type-id": "689870a4-a1e4-4912-b17f-7b2664215698",
+      "direction": "forward",
+      "target-credit": ""
+    },
+    {
+      "url": {
+        "id": "8a4bb3ed-fea6-44be-b5fd-c6fa5d36e2c2",
+        "resource": "https://en.wikipedia.org/wiki/Coldplay"
+      },
+      "type-id": "29651736-fa6d-48e4-aadc-a557c6add1cb",
+      "attribute-values": {},
+      "type": "wikipedia",
+      "direction": "forward",
+      "target-credit": "",
+      "attribute-ids": {},
+      "attributes": [],
+      "source-credit": "",
+      "begin": null,
+      "target-type": "url",
+      "end": null,
+      "ended": false
+    },
+    {
+      "type-id": "6a540e5b-58c6-4192-b6ba-dbc71ec8fcf0",
+      "url": {
+        "id": "71b1f729-bd36-47e7-8e26-0f1bb9a10f7f",
+        "resource": "https://www.youtube.com/user/ColdplayTV"
+      },
+      "attribute-values": {},
+      "type": "youtube",
+      "direction": "forward",
+      "target-credit": "",
+      "attribute-ids": {},
+      "source-credit": "",
+      "attributes": [],
+      "begin": null,
+      "target-type": "url",
+      "end": null,
+      "ended": false
+    },
+    {
+      "begin": null,
+      "end": null,
+      "ended": false,
+      "target-type": "url",
+      "target-credit": "",
+      "direction": "forward",
+      "type-id": "6a540e5b-58c6-4192-b6ba-dbc71ec8fcf0",
+      "url": {
+        "resource": "https://www.youtube.com/user/ColdplayVEVO",
+        "id": "c68a9fff-40a3-42bf-83c8-8913c8f80164"
+      },
+      "attribute-values": {},
+      "type": "youtube",
+      "attributes": [],
+      "source-credit": "",
+      "attribute-ids": {}
+    }
+  ],
+  "country": "GB",
+  "area": {
+    "iso-3166-1-codes": [
+      "GB"
+    ],
+    "type-id": null,
+    "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+    "type": null,
+    "disambiguation": "",
+    "name": "United Kingdom",
+    "sort-name": "United Kingdom"
+  },
+  "release-groups": [
+    {
+      "secondary-type-ids": [],
+      "secondary-types": [],
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "disambiguation": "",
+      "title": "Parachutes",
+      "id": "1dc4c347-a1db-32aa-b14f-bc9cc507b843",
+      "primary-type": "Album",
+      "first-release-date": "2000-07-10"
+    },
+    {
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-type-ids": [],
+      "secondary-types": [],
+      "disambiguation": "",
+      "primary-type": "Album",
+      "title": "A Rush of Blood to the Head",
+      "id": "120c786d-a3b2-3c19-b4ff-2b7b3b4435bf",
+      "first-release-date": "2002-08-12"
+    },
+    {
+      "primary-type": "Album",
+      "id": "c50b180a-12c9-3153-8ba5-eac6a6537d6f",
+      "title": "X&Y",
+      "first-release-date": "2005-06-01",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-type-ids": [],
+      "secondary-types": [],
+      "disambiguation": ""
+    },
+    {
+      "title": "Viva la Vida or Death and All His Friends",
+      "id": "a1084754-8bb5-3ebc-bbd2-6a27d48e798a",
+      "primary-type": "Album",
+      "first-release-date": "2008-05-26",
+      "secondary-types": [],
+      "secondary-type-ids": [],
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "disambiguation": ""
+    },
+    {
+      "first-release-date": "2011-10-19",
+      "id": "61b7b6cd-86a6-4728-9478-b58c93bca8fd",
+      "title": "Mylo Xyloto",
+      "primary-type": "Album",
+      "disambiguation": "",
+      "secondary-type-ids": [],
+      "secondary-types": [],
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "first-release-date": "2014-05-16",
+      "primary-type": "Album",
+      "title": "Ghost Stories",
+      "id": "9c5aa9d2-068b-4626-b352-ae6f4f4e0b15",
+      "disambiguation": "",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-types": [],
+      "secondary-type-ids": []
+    },
+    {
+      "first-release-date": "2015-12-04",
+      "primary-type": "Album",
+      "id": "27da3ef8-f3b0-47bf-898d-9bdf4af7fc04",
+      "title": "A Head Full of Dreams",
+      "disambiguation": "",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-type-ids": [],
+      "secondary-types": []
+    },
+    {
+      "first-release-date": "2019-11-22",
+      "title": "Everyday Life",
+      "id": "e45c32be-8e8b-48b5-8bbb-60f1a3115532",
+      "primary-type": "Album",
+      "disambiguation": "",
+      "secondary-types": [],
+      "secondary-type-ids": [],
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "first-release-date": "2021-10-15",
+      "primary-type": "Album",
+      "id": "c169f440-90bf-4a0b-aa6a-c83072bd7eed",
+      "title": "Music of the Spheres",
+      "disambiguation": "",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-type-ids": [],
+      "secondary-types": []
+    },
+    {
+      "disambiguation": "",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-type-ids": [
+        "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+      ],
+      "secondary-types": [
+        "Compilation"
+      ],
+      "first-release-date": "2010-09-09",
+      "primary-type": "Album",
+      "id": "3d950904-df38-4dac-b677-8708b971357a",
+      "title": "Viva La Vida / X&Y"
+    },
+    {
+      "first-release-date": "2012-11-26",
+      "title": "Coldplay 4 CD Catalogue Set",
+      "id": "5613f3e7-0b79-425d-bbd1-d685eeaf243f",
+      "primary-type": "Album",
+      "disambiguation": "",
+      "secondary-types": [
+        "Compilation"
+      ],
+      "secondary-type-ids": [
+        "dd2a21e1-0c00-3729-a7a0-de60b84eb5d1"
+      ],
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "disambiguation": "",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-types": [
+        "Live"
+      ],
+      "secondary-type-ids": [
+        "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+      ],
+      "first-release-date": "2003-11-01",
+      "primary-type": "Album",
+      "id": "470a94fd-1da8-3cb3-bc96-1f3a82cc3579",
+      "title": "Live 2003"
+    },
+    {
+      "first-release-date": "2009-05-15",
+      "title": "LeftRightLeftRightLeft",
+      "id": "64ad146f-304f-3353-9fc2-d21833a830ff",
+      "primary-type": "Album",
+      "disambiguation": "",
+      "secondary-type-ids": [
+        "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+      ],
+      "secondary-types": [
+        "Live"
+      ],
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc"
+    },
+    {
+      "id": "2f215175-266c-4945-b622-8c4f8cb0d4fb",
+      "title": "Live 2012",
+      "primary-type": "Album",
+      "first-release-date": "2012-11-19",
+      "secondary-types": [
+        "Live"
+      ],
+      "secondary-type-ids": [
+        "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+      ],
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "disambiguation": ""
+    },
+    {
+      "primary-type": "Album",
+      "id": "233bd660-b3a0-478e-a60c-056e2aeeddd7",
+      "title": "Ghost Stories Live 2014",
+      "first-release-date": "2014-11-24",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-type-ids": [
+        "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+      ],
+      "secondary-types": [
+        "Live"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "disambiguation": "",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-type-ids": [
+        "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+      ],
+      "secondary-types": [
+        "Live"
+      ],
+      "first-release-date": "2016-06-26",
+      "primary-type": "Album",
+      "title": "2016-06-26: Glastonbury Festival, Worthy Farm, Pilton, England",
+      "id": "f43e3130-2dec-4074-9798-49510cfcccfe"
+    },
+    {
+      "secondary-type-ids": [
+        "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+      ],
+      "secondary-types": [
+        "Live"
+      ],
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "disambiguation": "",
+      "title": "Live in Buenos Aires",
+      "id": "29b926ef-2080-44e9-b9e0-2ed6c25799f9",
+      "primary-type": "Album",
+      "first-release-date": "2018-12-07"
+    },
+    {
+      "first-release-date": "2018-12-07",
+      "primary-type": "Album",
+      "id": "5b62cd37-f8bf-41fd-ac67-14b967453d00",
+      "title": "Love in Tokyo",
+      "disambiguation": "",
+      "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+      "secondary-type-ids": [
+        "6fd474e2-6b58-3102-9d17-d6f7eb7da0a0"
+      ],
+      "secondary-types": [
+        "Live"
+      ]
+    },
+    {
+      "first-release-date": "1999-04-19",
+      "id": "2cbd8f25-00e0-387b-bc14-d387d6146e39",
+      "title": "Brothers & Sisters",
+      "primary-type": "Single",
+      "disambiguation": "",
+      "secondary-types": [],
+      "secondary-type-ids": [],
+      "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9"
+    },
+    {
+      "first-release-date": "2000-03-06",
+      "title": "Shiver",
+      "id": "b44c2e2b-b350-33db-a88f-ab91e2475529",
+      "primary-type": "Single",
+      "disambiguation": "",
+      "secondary-types": [],
+      "secondary-type-ids": [],
+      "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9"
+    },
+    {
+      "disambiguation": "",
+      "secondary-type-ids": [],
+      "secondary-types": [],
+      "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+      "first-release-date": "2000-06-26",
+      "title": "Yellow",
+      "id": "8049edc0-0bf7-319c-a9b3-ae9922fc0160",
+      "primary-type": "Single"
+    },
+    {
+      "disambiguation": "",
+      "secondary-types": [],
+      "secondary-type-ids": [],
+      "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+      "first-release-date": "2000-10-23",
+      "title": "Trouble",
+      "id": "6d6fab8d-2657-3f50-b87f-0e6a62118b10",
+      "primary-type": "Single"
+    },
+    {
+      "primary-type": "Single",
+      "title": "Don’t Panic",
+      "id": "7f916a6f-9480-3a0f-b9e1-5682e15aba24",
+      "first-release-date": "2001-03-19",
+      "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+      "secondary-types": [],
+      "secondary-type-ids": [],
+      "disambiguation": ""
+    },
+    {
+      "first-release-date": "2002-08-05",
+      "title": "In My Place",
+      "id": "b59aa7e0-2571-37a5-82ac-debe6abc9b9b",
+      "primary-type": "Single",
+      "disambiguation": "",
+      "secondary-types": [],
+      "secondary-type-ids": [],
+      "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9"
+    },
+    {
+      "primary-type": "Single",
+      "title": "The Scientist",
+      "id": "941f4fc8-6eb2-346f-8527-52f634944de7",
+      "first-release-date": "2002-11-04",
+      "primary-type-id": "d6038452-8ee0-3f68-affc-2de9a1ede0b9",
+      "secondary-type-ids": [],
+      "secondary-types": [],
+      "disambiguation": ""
+    }
+  ],
+  "name": "Coldplay",
+  "end_area": null,
+  "begin_area": {
+    "type-id": null,
+    "id": "f03d09b3-39dc-4083-afd6-159e3f0d462f",
+    "type": null,
+    "sort-name": "London",
+    "name": "London",
+    "disambiguation": ""
+  },
+  "disambiguation": "",
+  "begin-area": {
+    "type-id": null,
+    "id": "f03d09b3-39dc-4083-afd6-159e3f0d462f",
+    "type": null,
+    "sort-name": "London",
+    "name": "London",
+    "disambiguation": ""
+  },
+  "end-area": null,
+  "gender-id": null,
+  "sort-name": "Coldplay",
+  "isnis": [
+    "000000011551394X"
+  ]
+}

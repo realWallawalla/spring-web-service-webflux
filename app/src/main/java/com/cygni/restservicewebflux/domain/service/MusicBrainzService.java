@@ -1,7 +1,7 @@
 package com.cygni.restservicewebflux.domain.service;
 
 import com.cygni.restservicewebflux.domain.client.MusicBrainzClient;
-import com.cygni.restservicewebflux.externalmodel.musicbrainz.MusicBrainzResponseDto;
+import com.cygni.restservicewebflux.externalmodel.musicbrainz.MusicBrainzDto;
 import org.springframework.stereotype.Component;
 import reactor.core.publisher.Mono;
 
@@ -13,7 +13,7 @@ public class MusicBrainzService {
     this.musicBrainzClient = musicBrainzClient;
   }
 
-  public Mono<MusicBrainzResponseDto> retrieveArtistInfo(String mbId) {
+  public Mono<MusicBrainzDto> retrieveArtistInfo(String mbId) {
     return musicBrainzClient.sendRequest(mbId);
   }
 }

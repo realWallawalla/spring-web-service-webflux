@@ -2,13 +2,10 @@ package com.cygni.restservicewebflux.domain.service;
 
 import com.cygni.restservicewebflux.domain.dto.AlbumDto;
 import com.cygni.restservicewebflux.domain.dto.MashUpDto;
-import com.cygni.restservicewebflux.domain.util.RelationUtil;
-import com.cygni.restservicewebflux.externalmodel.WikiType;
-import com.cygni.restservicewebflux.externalmodel.musicbrainz.MusicBrainzResponseDto;
+import com.cygni.restservicewebflux.externalmodel.musicbrainz.MusicBrainzDto;
 import com.cygni.restservicewebflux.externalmodel.musicbrainz.ReleaseGroupDto;
 import java.util.List;
 import java.util.Objects;
-import java.util.Optional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -34,17 +31,15 @@ public class MashUpService {
   }
 
   public Mono<MashUpDto> createMashupMessage(String mbId) {
-    return musicBrainzService.retrieveArtistInfo(mbId)
+    return musicBrainzService
+        .retrieveArtistInfo(mbId)
         .flatMap(
-            musicBrainzResponse -> {
-              Optional<String> title =
-                  RelationUtil.lookForTitle(musicBrainzResponse.relations(), WikiType.WIKIPEDIA)
-                      .flatMap(RelationUtil::extractTitle);
-              return retrieveArtistDescription(musicBrainzResponse, title.orElseGet(() -> ""))
+            musicBrainzDto -> {
+              return retrieveArtistDescription(musicBrainzDto)
                   .zipWith(
-                      retrieveAlbums(musicBrainzResponse.releaseGroupDtos()),
+                      retrieveAlbums(musicBrainzDto.releaseGroupDtos()),
                       (description, albums) -> {
-                        return new MashUpDto(musicBrainzResponse.mbId(), description, albums);
+                        return new MashUpDto(musicBrainzDto.artistMbId(), description, albums);
                       });
             })
         .doOnError(
@@ -54,16 +49,12 @@ public class MashUpService {
             });
   }
 
-  private Mono<String> retrieveArtistDescription(
-      MusicBrainzResponseDto musicBrainzResponse, String title) {
-    return title.isBlank()
+  private Mono<String> retrieveArtistDescription(MusicBrainzDto musicBrainzDto) {
+    return musicBrainzDto.wikipediaId().isBlank()
         ? wikiService
-            .getTitle(
-                RelationUtil.lookForTitle(musicBrainzResponse.relations(), WikiType.WIKIDATA)
-                    .flatMap(RelationUtil::extractTitle)
-                    .orElseGet(() -> ""))
+            .getTitle(musicBrainzDto.wikidataId())
             .flatMap(wikiService::getArtistDescription)
-        : wikiService.getArtistDescription(title);
+        : wikiService.getArtistDescription(musicBrainzDto.wikipediaId());
   }
 
   private Mono<List<AlbumDto>> retrieveAlbums(List<ReleaseGroupDto> releaseGroups) {
@@ -75,7 +66,9 @@ public class MashUpService {
 
   private Mono<AlbumDto> createAlbum(ReleaseGroupDto releaseGroupDto) {
     return coverArtService
-        .getCoverPhotoUrl(releaseGroupDto.id())
-        .map(imageUrl -> new AlbumDto(releaseGroupDto.id(), releaseGroupDto.title(), imageUrl));
+        .getCoverPhotoUrl(releaseGroupDto.artistId())
+        .map(
+            imageUrl ->
+                new AlbumDto(releaseGroupDto.artistId(), releaseGroupDto.albumTitle(), imageUrl));
   }
 }
