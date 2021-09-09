@@ -2,7 +2,7 @@ package com.cygni.restservicewebflux.domain.service;
 
 import com.cygni.restservicewebflux.domain.client.WikidataClient;
 import com.cygni.restservicewebflux.domain.client.WikipediaClient;
-import com.cygni.restservicewebflux.externalmodel.wikidata.WikiDataResponseDto;
+import com.cygni.restservicewebflux.externalmodel.wikidata.WikidataDto;
 import com.cygni.restservicewebflux.externalmodel.wikipedia.WikipediaResponseDto;
 import org.springframework.stereotype.Component;
 import reactor.core.publisher.Mono;
@@ -24,17 +24,7 @@ public class WikiService {
   }
 
   public Mono<String> getTitle(String wikiDataPageId) {
-    return wikidataClient.sendRequest(wikiDataPageId).map(this::getTitleFromWikiDataResp);
-  }
-
-  private String getTitleFromWikiDataResp(WikiDataResponseDto wikiDataResponseDto) {
-    return wikiDataResponseDto
-        .entities()
-        .getWikiDataMap()
-        .get(WIKI_DATA_MAP_KEY)
-        .siteLinksDto()
-        .enWikiDto()
-        .title();
+    return wikidataClient.sendRequest(wikiDataPageId).map(WikidataDto::title);
   }
 
   private String extractDescription(WikipediaResponseDto wikipediaResponse) {

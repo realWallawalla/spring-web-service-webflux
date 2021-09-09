@@ -1,5 +1,6 @@
 package com.cygni.restservicewebflux.domain.util;
 
+import com.cygni.restservicewebflux.externalmodel.WikiType;
 import com.cygni.restservicewebflux.externalmodel.musicbrainz.RelationDto;
 import com.cygni.restservicewebflux.externalmodel.musicbrainz.UrlDto;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.cygni.restservicewebflux.domain.util;
+package com.cygni.restservicewebflux.externalmodel;
 
 public enum WikiType {
     WIKIDATA("wikidata"),

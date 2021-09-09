@@ -3,7 +3,7 @@ package com.cygni.restservicewebflux.domain.service;
 import com.cygni.restservicewebflux.domain.dto.AlbumDto;
 import com.cygni.restservicewebflux.domain.dto.MashUpDto;
 import com.cygni.restservicewebflux.domain.util.RelationUtil;
-import com.cygni.restservicewebflux.domain.util.WikiType;
+import com.cygni.restservicewebflux.externalmodel.WikiType;
 import com.cygni.restservicewebflux.externalmodel.musicbrainz.MusicBrainzResponseDto;
 import com.cygni.restservicewebflux.externalmodel.musicbrainz.ReleaseGroupDto;
 import java.util.List;
@@ -50,7 +50,7 @@ public class MashUpService {
         .doOnError(
             throwable -> {
               log.error("Could not reach underlying apis: {}", throwable.getMessage());
-              throw new RestClientException(throwable.getMessage());
+              throw new RestClientException(throwable.getMessage(), throwable);
             });
   }
 
