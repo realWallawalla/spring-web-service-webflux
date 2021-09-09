@@ -1,6 +1,6 @@
 package com.cygni.restservicewebflux.domain.client;
 
-import com.cygni.restservicewebflux.externalmodel.coverartarchive.CoverArtArchiveResponseDto;
+import com.cygni.restservicewebflux.externalmodel.coverartarchive.CoverArtArchiveDto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.MediaType;
@@ -11,7 +11,7 @@ import reactor.core.publisher.Mono;
 import reactor.netty.http.client.HttpClient;
 
 @Component
-public class CoverArtArchiveClient implements Client<CoverArtArchiveResponseDto, String> {
+public class CoverArtArchiveClient implements Client<CoverArtArchiveDto, String> {
   private static final Logger log = LoggerFactory.getLogger(WikidataClient.class);
   public static final String BASE_URL = "https://coverartarchive.org";
   private final WebClient webClient;
@@ -26,14 +26,14 @@ public class CoverArtArchiveClient implements Client<CoverArtArchiveResponseDto,
   }
 
   @Override
-  public Mono<CoverArtArchiveResponseDto> sendRequest(String albumId) {
+  public Mono<CoverArtArchiveDto> sendRequest(String albumId) {
     log.info("fetching from coverArtArchive");
     return webClient
         .get()
         .uri("/release-group/{mbid}", albumId)
         .accept(MediaType.APPLICATION_JSON)
         .retrieve()
-        .bodyToMono(CoverArtArchiveResponseDto.class)
+        .bodyToMono(CoverArtArchiveDto.class)
         .doOnError(
             throwable ->
                 log.info(
