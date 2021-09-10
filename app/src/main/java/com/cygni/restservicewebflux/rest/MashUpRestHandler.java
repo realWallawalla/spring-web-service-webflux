@@ -1,5 +1,7 @@
 package com.cygni.restservicewebflux.rest;
 
+import static v1.RestPaths.GET_MASH_UP;
+
 import com.cygni.mashup._1_0.MashUp;
 import com.cygni.restservicewebflux.domain.converter.output.MashUpOutputConverter;
 import com.cygni.restservicewebflux.domain.service.MashUpService;
@@ -13,6 +15,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
+import v1.MessageTypes;
 
 @RestController
 public class MashUpRestHandler {
@@ -30,7 +33,7 @@ public class MashUpRestHandler {
     this.mashUpOutputConverter = mashUpOutputConverter;
   }
 
-  @GetMapping(value = "/mashup/{mbid}", produces = MediaType.APPLICATION_JSON_VALUE)
+  @GetMapping(value = GET_MASH_UP, produces = MessageTypes.MASH_UP_1_JSON)
   public Mono<ResponseEntity<MashUp>> getMashUp(@PathVariable(value = "mbid") final String mbId) {
     log.info("fetching mashup");
     return mashUpService

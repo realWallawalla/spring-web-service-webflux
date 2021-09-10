@@ -51,7 +51,7 @@ class MashUpRestHandlerTest {
 
     webTestClient
         .get()
-        .uri(RestPaths.MASH_UP_BASE, mbId)
+        .uri(RestPaths.GET_MASH_UP, mbId)
         .accept(MediaType.parseMediaType(MessageTypes.MASH_UP_1_JSON))
         .exchange()
         .expectStatus()
