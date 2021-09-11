@@ -13,7 +13,7 @@ public class CoverArtService {
     this.coverArtArchiveClient = coverArtArchiveClient;
   }
 
-  public Mono<String> getCoverPhotoUrl(String albumId) {
+  public Mono<String> fetchCoverPhotoUrl(String albumId) {
     return coverArtArchiveClient.sendRequest(albumId).map(CoverArtArchiveDto::imageUrl);
   }
 }

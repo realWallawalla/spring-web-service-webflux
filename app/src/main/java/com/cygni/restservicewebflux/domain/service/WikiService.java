@@ -17,11 +17,11 @@ public class WikiService {
     this.wikidataClient = wikidataClient;
   }
 
-  public Mono<String> getArtistDescription(String title) {
+  public Mono<String> fetchArtistDescription(String title) {
     return wikipediaClient.sendRequest(title).map(WikipediaDto::extract);
   }
 
-  public Mono<String> getTitle(String wikiDataPageId) {
+  public Mono<String> fetchWikipediaId(String wikiDataPageId) {
     return wikidataClient.sendRequest(wikiDataPageId).map(WikidataDto::title);
   }
 }

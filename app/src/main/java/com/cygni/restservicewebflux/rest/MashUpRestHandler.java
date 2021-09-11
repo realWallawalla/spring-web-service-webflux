@@ -9,7 +9,6 @@ import com.cygni.restservicewebflux.domain.service.ThrottlingService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -36,10 +35,16 @@ public class MashUpRestHandler {
   @GetMapping(value = GET_MASH_UP, produces = MessageTypes.MASH_UP_1_JSON)
   public Mono<ResponseEntity<MashUp>> getMashUp(@PathVariable(value = "mbid") final String mbId) {
     log.info("fetching mashup");
-    return mashUpService
-        .createMashupMessage(mbId)
-        .map(mashUpOutputConverter::convert)
-        .map(mashUp -> ResponseEntity.ok().body(mashUp))
-        .onErrorReturn(ResponseEntity.status(HttpStatus.FAILED_DEPENDENCY).build());
+    return isMbIdValid(mbId)
+        ? mashUpService
+            .createMashupMessage(mbId)
+            .map(mashUpOutputConverter::convert)
+            .map(mashUp -> ResponseEntity.ok().body(mashUp))
+            .onErrorReturn(ResponseEntity.status(HttpStatus.FAILED_DEPENDENCY).build())
+        : Mono.just(ResponseEntity.status(HttpStatus.BAD_REQUEST).body(new MashUp()));
+  }
+
+  private boolean isMbIdValid(String mbId) {
+    return mbId.length() == 36 && mbId.replaceAll("-", "").matches("-?[0-9a-fA-F]+");
   }
 }

@@ -14,8 +14,6 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class MusicBrainzDeserializer extends JsonDeserializer<MusicBrainzDto> {
 
@@ -42,10 +40,8 @@ public class MusicBrainzDeserializer extends JsonDeserializer<MusicBrainzDto> {
   private List<ReleaseGroupDto> convertToReleaseGroupDtos(JsonNode releaseGroups) {
     return StreamSupport.stream(releaseGroups.spliterator(), false)
         .map(
-            jsonNode -> {
-              return new ReleaseGroupDto(
-                  jsonNode.path("id").asText(), jsonNode.path("title").asText());
-            })
+            jsonNode ->
+                new ReleaseGroupDto(jsonNode.path("id").asText(), jsonNode.path("title").asText()))
         .collect(Collectors.toList());
   }
 

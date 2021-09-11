@@ -52,9 +52,9 @@ public class MashUpService {
   private Mono<String> retrieveArtistDescription(MusicBrainzDto musicBrainzDto) {
     return musicBrainzDto.wikipediaId().isBlank()
         ? wikiService
-            .getTitle(musicBrainzDto.wikidataId())
-            .flatMap(wikiService::getArtistDescription)
-        : wikiService.getArtistDescription(musicBrainzDto.wikipediaId());
+            .fetchWikipediaId(musicBrainzDto.wikidataId())
+            .flatMap(wikiService::fetchArtistDescription)
+        : wikiService.fetchArtistDescription(musicBrainzDto.wikipediaId());
   }
 
   private Mono<List<AlbumDto>> retrieveAlbums(List<ReleaseGroupDto> releaseGroups) {
@@ -66,9 +66,9 @@ public class MashUpService {
 
   private Mono<AlbumDto> createAlbum(ReleaseGroupDto releaseGroupDto) {
     return coverArtService
-        .getCoverPhotoUrl(releaseGroupDto.artistId())
+        .fetchCoverPhotoUrl(releaseGroupDto.albumId())
         .map(
             imageUrl ->
-                new AlbumDto(releaseGroupDto.artistId(), releaseGroupDto.albumTitle(), imageUrl));
+                new AlbumDto(releaseGroupDto.albumId(), releaseGroupDto.albumTitle(), imageUrl));
   }
 }

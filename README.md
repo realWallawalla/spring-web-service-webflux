@@ -11,6 +11,7 @@ examples:
 
     Snoop-dog - f90e8b26-9e52-4669-a5c9-e28529c47894,
     Nirvana - 5b11f4ce-a62d-471e-81fc-a69a8278c7da
+    Coldplay - cc197bad-dc9c-440d-a5b5-d52ba2e14234
 
 There is a rateLimiter 1 request per second. musicBrainz have the same request limit 1req/s per user.
 However underlying api requests escpically for coverArtArchive is quite slow. A cache would probably improve performance significantly.
