@@ -69,8 +69,10 @@ class MashUpRestHandlerTest {
 
   @Test
   void getMashUp_should_return_failed_dependency_as_status_on_error() {
-    when(mashUpService.createMashupMessage(mbId)).thenReturn(Mono.error(() -> new RestClientException("error")));
-    webTestClient.get()
+    when(mashUpService.createMashupMessage(mbId))
+        .thenReturn(Mono.error(() -> new RestClientException("error")));
+    webTestClient
+        .get()
         .uri(RestPaths.GET_MASH_UP, mbId)
         .accept(MediaType.parseMediaType(MessageTypes.MASH_UP_1_JSON))
         .exchange()
@@ -80,7 +82,8 @@ class MashUpRestHandlerTest {
 
   @Test
   void getMashUp_should_return_bad_request_when_mbId_is_incorrect_length() {
-    webTestClient.get()
+    webTestClient
+        .get()
         .uri(RestPaths.GET_MASH_UP, "f90e8b26-9e52-4669-e285")
         .accept(MediaType.parseMediaType(MessageTypes.MASH_UP_1_JSON))
         .exchange()
@@ -89,9 +92,109 @@ class MashUpRestHandlerTest {
   }
 
   @Test
-  void getMashUp_should_return_bad_request_when_mbId_is_not_hexadecimal() {
-    webTestClient.get()
+  void getMashUp_should_return_bad_request_when_mbId_part_1_is_not_correct_length() {
+    webTestClient
+        .get()
+        .uri(RestPaths.GET_MASH_UP, "f9-9e52-4669-a5c9-e28529c47894")
+        .accept(MediaType.parseMediaType(MessageTypes.MASH_UP_1_JSON))
+        .exchange()
+        .expectStatus()
+        .isEqualTo(HttpStatus.BAD_REQUEST);
+  }
+
+  @Test
+  void getMashUp_should_return_bad_request_when_mbId_part_2_is_not_correct_length() {
+    webTestClient
+        .get()
+        .uri(RestPaths.GET_MASH_UP, "f90e8b26-9-4669-a5c9-e28529c47894")
+        .accept(MediaType.parseMediaType(MessageTypes.MASH_UP_1_JSON))
+        .exchange()
+        .expectStatus()
+        .isEqualTo(HttpStatus.BAD_REQUEST);
+  }
+
+  @Test
+  void getMashUp_should_return_bad_request_when_mbId_part_3_is_not_correct_length() {
+    webTestClient
+        .get()
+        .uri(RestPaths.GET_MASH_UP, "f90e8b26-9e52-e-a5c9-e28529c47894")
+        .accept(MediaType.parseMediaType(MessageTypes.MASH_UP_1_JSON))
+        .exchange()
+        .expectStatus()
+        .isEqualTo(HttpStatus.BAD_REQUEST);
+  }
+
+  @Test
+  void getMashUp_should_return_bad_request_when_mbId_part_4_is_not_correct_length() {
+    webTestClient
+        .get()
+        .uri(RestPaths.GET_MASH_UP, "f90e8b26-9e52-4669-a-e28529c47894")
+        .accept(MediaType.parseMediaType(MessageTypes.MASH_UP_1_JSON))
+        .exchange()
+        .expectStatus()
+        .isEqualTo(HttpStatus.BAD_REQUEST);
+  }
+
+  @Test
+  void getMashUp_should_return_bad_request_when_mbId_part_5_is_not_correct_length() {
+    webTestClient
+        .get()
+        .uri(RestPaths.GET_MASH_UP, "f90e8b26-9e52-4669-a5c9-e")
+        .accept(MediaType.parseMediaType(MessageTypes.MASH_UP_1_JSON))
+        .exchange()
+        .expectStatus()
+        .isEqualTo(HttpStatus.BAD_REQUEST);
+  }
+
+  @Test
+  void getMashUp_should_return_bad_request_when_mbId_part_1_is_not_hexadecimal() {
+    webTestClient
+        .get()
         .uri(RestPaths.GET_MASH_UP, "k90e8b26-9e52-4669-a5c9-e28529c47894")
+        .accept(MediaType.parseMediaType(MessageTypes.MASH_UP_1_JSON))
+        .exchange()
+        .expectStatus()
+        .isEqualTo(HttpStatus.BAD_REQUEST);
+  }
+
+  @Test
+  void getMashUp_should_return_bad_request_when_mbId_part_2_is_not_hexadecimal() {
+    webTestClient
+        .get()
+        .uri(RestPaths.GET_MASH_UP, "f90e8b26-9p52-4669-a5c9-e28529c47894")
+        .accept(MediaType.parseMediaType(MessageTypes.MASH_UP_1_JSON))
+        .exchange()
+        .expectStatus()
+        .isEqualTo(HttpStatus.BAD_REQUEST);
+  }
+
+  @Test
+  void getMashUp_should_return_bad_request_when_mbId_part_3_is_not_hexadecimal() {
+    webTestClient
+        .get()
+        .uri(RestPaths.GET_MASH_UP, "f90e8b26-9e52-4g69-a5c9-e28529c47894")
+        .accept(MediaType.parseMediaType(MessageTypes.MASH_UP_1_JSON))
+        .exchange()
+        .expectStatus()
+        .isEqualTo(HttpStatus.BAD_REQUEST);
+  }
+
+  @Test
+  void getMashUp_should_return_bad_request_when_mbId_part_4_is_not_hexadecimal() {
+    webTestClient
+        .get()
+        .uri(RestPaths.GET_MASH_UP, "f90e8b26-9e52-4669-a5n9-e28529c47894")
+        .accept(MediaType.parseMediaType(MessageTypes.MASH_UP_1_JSON))
+        .exchange()
+        .expectStatus()
+        .isEqualTo(HttpStatus.BAD_REQUEST);
+  }
+
+  @Test
+  void getMashUp_should_return_bad_request_when_mbId_part_5_is_not_hexadecimal() {
+    webTestClient
+        .get()
+        .uri(RestPaths.GET_MASH_UP, "f90e8b26-9e52-4669-a5c9-v28529c47894")
         .accept(MediaType.parseMediaType(MessageTypes.MASH_UP_1_JSON))
         .exchange()
         .expectStatus()

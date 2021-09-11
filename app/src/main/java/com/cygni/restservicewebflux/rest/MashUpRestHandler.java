@@ -6,6 +6,7 @@ import com.cygni.mashup._1_0.MashUp;
 import com.cygni.restservicewebflux.domain.converter.output.MashUpOutputConverter;
 import com.cygni.restservicewebflux.domain.service.MashUpService;
 import com.cygni.restservicewebflux.domain.service.ThrottlingService;
+import java.util.Arrays;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -45,6 +46,14 @@ public class MashUpRestHandler {
   }
 
   private boolean isMbIdValid(String mbId) {
-    return mbId.length() == 36 && mbId.replaceAll("-", "").matches("-?[0-9a-fA-F]+");
+    String[] strings = mbId.split("-");
+    return mbId.length() == 36
+        && strings.length == 5
+        && strings[0].length() == 8
+        && strings[1].length() == 4
+        && strings[2].length() == 4
+        && strings[3].length() == 4
+        && strings[4].length() == 12
+        && Arrays.stream(strings).allMatch(s -> s.matches("-?[0-9a-fA-F]+"));
   }
 }
