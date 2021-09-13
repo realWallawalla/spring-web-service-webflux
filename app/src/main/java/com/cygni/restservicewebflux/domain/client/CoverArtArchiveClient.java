@@ -1,8 +1,10 @@
 package com.cygni.restservicewebflux.domain.client;
 
+import com.cygni.restservicewebflux.domain.util.ExternalApiType.CacheNames;
 import com.cygni.restservicewebflux.externalmodel.coverartarchive.CoverArtArchiveDto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.MediaType;
 import org.springframework.http.client.reactive.ReactorClientHttpConnector;
 import org.springframework.stereotype.Component;
@@ -26,6 +28,7 @@ public class CoverArtArchiveClient implements Client<CoverArtArchiveDto, String>
   }
 
   @Override
+  @Cacheable(value = CacheNames.MUSIC_BRAINZ_CACHE, key = "#albumId")
   public Mono<CoverArtArchiveDto> sendRequest(String albumId) {
     log.info("fetching from coverArtArchive");
     return webClient
@@ -39,6 +42,6 @@ public class CoverArtArchiveClient implements Client<CoverArtArchiveDto, String>
                 log.info(
                     "Continuing and dropping erroneous elements. Message: {}",
                     throwable.getMessage()))
-        .onErrorResume(throwable -> Mono.empty());
+        .onErrorResume(throwable -> Mono.just(new CoverArtArchiveDto("N/A")));
   }
 }

@@ -2,9 +2,11 @@ package com.cygni.restservicewebflux.domain.client;
 
 import com.cygni.restservicewebflux.domain.exception.ExternalApiException;
 import com.cygni.restservicewebflux.domain.util.ExternalApiType;
+import com.cygni.restservicewebflux.domain.util.ExternalApiType.CacheNames;
 import com.cygni.restservicewebflux.externalmodel.musicbrainz.MusicBrainzDto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
@@ -21,6 +23,8 @@ public class MusicBrainzClient implements Client<MusicBrainzDto, String> {
     this.webClient = webClientBuilder.baseUrl(BASE_URL).build();
   }
 
+  @Override
+  @Cacheable(value = CacheNames.MUSIC_BRAINZ_CACHE, key = "#mbId")
   public Mono<MusicBrainzDto> sendRequest(String mbId) {
     log.info("fetching from musicBrainApi");
     return webClient
